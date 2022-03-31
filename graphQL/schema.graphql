@@ -1,0 +1,81 @@
+const { gql } = require('apollo-server-express');
+
+const schema = gql`
+
+"""
+Launch in the app
+"""
+type Launch {
+    id: String
+    launchpad: String
+    flight_number: Int
+    name: String
+    date_utc: String
+    date_local: String
+    success: Boolean
+    details: String
+
+    # Je vais pouvoir décrire des liens entre mes entités
+    failures: [LaunchFailures]
+    links: LaunchLinks
+    rocket: Rocket
+}
+
+"""
+Rocket use for launch
+"""
+type Rocket {
+    id: String
+    name: String
+    type: String
+    active: Boolean
+    stages: Int
+    boosters: Int
+    cost_per_launch: Int
+    suucess_rate_pct: Int
+    first_flight: String
+    country: String
+    company: String
+    wikipedia: String
+    description: String
+    flickr_images: [String]
+}
+
+"""
+Many links to launch
+"""
+type LaunchLinks {
+    presskit: String
+    webcast: String
+    article: String
+    wikipedia: String
+    patch: LaunchPatch
+}
+
+type LaunchPatch {
+    small: String
+    large: String
+}
+
+type LaunchFailures {
+    time: Int 
+    altitude: Int
+    reason: String 
+}
+
+type Query {
+    
+    "Return all Launches"
+    launches: [Launch]
+    "Return a Launch by ID"
+    launch(id: String): Launch
+
+    "Return all Rockets"
+    rockets: [Rocket]
+    "Return a Rocket by ID"
+    rocket(id: String): Rocket
+}
+
+`;
+
+module.exports = schema;

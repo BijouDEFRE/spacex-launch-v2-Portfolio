@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.20cecff8.chunk.css",
+    "main.js": "/static/js/main.3977d07d.chunk.js",
+    "main.js.map": "/static/js/main.3977d07d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.776c1e0d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.776c1e0d.js.map",
+    "static/js/2.0c891803.chunk.js": "/static/js/2.0c891803.chunk.js",
+    "static/js/2.0c891803.chunk.js.map": "/static/js/2.0c891803.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.20cecff8.chunk.css.map": "/static/css/main.20cecff8.chunk.css.map",
+    "static/js/2.0c891803.chunk.js.LICENSE.txt": "/static/js/2.0c891803.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/Background.fdc1cddc.jpg",
+    "static/media/LogoSpaceX.66f924fc.png": "/static/media/LogoSpaceX.66f924fc.png",
+    "static/media/SpaceX.ca5e5400.svg": "/static/media/SpaceX.ca5e5400.svg",
+    "static/media/Spacex_3.0b8c9cde.png": "/static/media/Spacex_3.0b8c9cde.png",
+    "static/media/left-arrow.6dbad60c.svg": "/static/media/left-arrow.6dbad60c.svg",
+    "static/media/right-arrow.9fa8ad46.svg": "/static/media/right-arrow.9fa8ad46.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.776c1e0d.js",
+    "static/js/2.0c891803.chunk.js",
+    "static/css/main.20cecff8.chunk.css",
+    "static/js/main.3977d07d.chunk.js"
+  ]
+}
